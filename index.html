@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex problem</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            width: 1100px;
+            height: 1150px;
+            /* border: 1px solid red; */
+            margin: auto;
+        }
+
+        h1 {
+            color: gold;
+            padding-left: 10px;
+            font-family: fantasy;
+            text-decoration: underline;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2%;
+
+            gap: 50px;
+        }
+
+        .flex-container>div {
+            /* border: 1px solid black; */
+            width: 310px;
+            height: 500px;
+            cursor: pointer;
+        }
+
+        .flex-container>div>img:hover {
+
+            height: 500px;
+            transition: 0.5s;
+        }
+
+
+        .img-wrapper {
+            width: 300px;
+            height: 400px;
+        }
+
+        img {
+            width: 100%;
+            height: 450px;
+        }
+
+        .name {
+            width: 100%;
+            height: 45px;
+            /* border: 1px solid red; */
+            text-align: center;
+            background-color: rgb(37, 35, 35);
+            color: yellow;
+
+        }
+
+        .name p {
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> Top 6 Picks of the Month</h1>
+
+        <div class="flex-container">
+
+            <div class="img-wrapper">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzRiMjg0MzUtNTQ1Mi00Y2Q5LWEwM2MtMzUwZDU5NmVjN2NkXkEyXkFqcGc@._V1_.jpg"
+                    alt="Deadpool_&_Wolverine">
+                <div class="name">
+                    <p>1. Deadpool & Wolverine</p>
+                    <p>⭐ 8.7/10</p>
+                </div>
+            </div>
+
+
+
+            <div class="img-wrapper">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTA1NmUxYzItZmVmNy00YmQxLTk4Y2UtZjVkMWUwMWQ5N2IxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                    alt="Stree_2">
+                <div class="name">
+                    <p>2. Stree 2</p>
+                    <p>⭐ 7.8/10</p>
+                </div>
+            </div>
+
+
+
+            <div class="img-wrapper">
+                <img src="https://preview.redd.it/kalki-2898-ad-poster-minor-color-edit-v0-sun43htb75xc1.jpeg?auto=webp&s=f07098af3c4f46c354c91835f2adc283489b3054"
+                    alt="Kalki">
+                <div class="name">
+                    <p>3. Kalki 2898 AD</p>
+                    <p>⭐ 7.3/10</p>
+                </div>
+            </div>
+
+            <div class="img-wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/34/Furiosa_A_Mad_Max_Saga.jpg"
+                    alt="Furiosa_A_Mad_Max_Saga">
+                <div class="name">
+                    <p>4. Furiosa A Mad Max Saga</p>
+                    <p>⭐ 7.6/10</p>
+                </div>
+            </div>
+
+            <div class="img-wrapper">
+                <img src="https://m.media-amazon.com/images/I/413-T6AtQqL._AC_.jpg" alt="suits">
+                <div class="name">
+                    <p>5. Suits</p>
+                    <p>⭐ 8.4/10</p>
+                </div>
+            </div>
+
+            <div class="img-wrapper">
+                <img src="https://www.usatoday.com/gcdn/authoring/authoring-images/2024/06/12/USAT/74076458007-keyart-5.jpg"
+                    alt="house_of_the_dragon">
+                <div class="name">
+                    <p>6. House of the Dragon</p>
+                    <p>⭐ 8.4/10</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
